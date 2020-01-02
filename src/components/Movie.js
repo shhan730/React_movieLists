@@ -1,9 +1,9 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { Item } from 'semantic-ui-react'
 
 function Movie({id, year, title, summary, poster, genres}){
+  
   const items = {
     childKey: id,
     image: poster,
@@ -15,7 +15,7 @@ function Movie({id, year, title, summary, poster, genres}){
 
   return (
     <div>
-      <Item items={items}/>
+      <Item.Group items={items}/>
     </div>
   );
 
