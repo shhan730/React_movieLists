@@ -35,7 +35,6 @@ class Home extends React.Component{
           ):(
             <div>
               <Item.Group items={movies}/>
-              
             </div>
           )
         }
